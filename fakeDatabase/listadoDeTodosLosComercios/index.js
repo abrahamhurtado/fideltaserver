@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker';
+import faker from 'faker/locale/es_MX';
 
 var listadoDeComercios = [
   {
