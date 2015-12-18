@@ -14,10 +14,10 @@ var datosComercio = {
     Description: faker.company.catchPhrase(),
     WalletBonus: 0,
     InvitedBonus: 0,
-    userName: faker.internet.userName(),
+    UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    Businessimage: faker.image.business(),
+    BusinessImage: faker.image.business(),
     WithWallet: true,
     Branches: [
         {
