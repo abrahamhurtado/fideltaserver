@@ -1,15 +1,15 @@
 import express from 'express';
-import Faker from 'faker';
+import faker from 'faker';
 
 var miBaseDeUsuarios = {
   0: {
     Id: 0,
-    Email: Faker.Internet.email(),
-    FirstName: Faker.Name.firstName(),
-    LastName: Faker.Name.lastName(),
+    Email: faker.internet.email(),
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
     IsMan: true,
-    ImageCode: Faker.Image.avatar(),
-    BirthDate: Faker.Date.past(),
+    imageCode: faker.image.avatar(),
+    Birthdate: faker.date.past(),
     Wallets: 0
   }
 }

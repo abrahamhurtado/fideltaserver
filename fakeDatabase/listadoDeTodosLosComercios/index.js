@@ -1,78 +1,78 @@
 import express from 'express';
-import Faker from 'Faker';
+import faker from 'faker';
 
 var listadoDeComercios = [
   {
-    BusinessId: Faker.random.number(),
-    Name: Faker.Company.companyName(),
-    CategoryName: Faker.Company.bs(),
-    Email: Faker.Internet.email(),
+    BusinessId: faker.random.number(),
+    name: faker.company.companyName(),
+    Categoryname: faker.company.bs(),
+    Email: faker.internet.email(),
     Website: "http://facebook.com",
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
     Code: "Industria Inutil",
-    Description: Faker.Company.catchPhrase(),
+    Description: faker.company.catchPhrase(),
     WalletBonus: 0,
     InvitedBonus: 0,
     InviteBonus: 0,
-    UserName: Faker.Internet.userName(),
-    UserEmail: Faker.Internet.email(),
+    userName: faker.internet.userName(),
+    UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: Faker.Image.imageUrl(),
+    Businessimage: faker.image.imageUrl(),
     WithWallet: true,
     Branches: [
       {
         BranchID: 0,
-        BranchName: Faker.Company.companyName(),
-        BranchAddress: Faker.Address.streetAddress(),
-        BranchPhone: Faker.PhoneNumber.phoneNumber(),
-        BranchLat: Faker.Address.latitude(),
-        BranchLng: Faker.Address.longitude()
+        Branchname: faker.company.companyName(),
+        Branchaddress: faker.address.streetAddress(),
+        BranchPhone: faker.phone.phoneNumber(),
+        BranchLat: faker.address.latitude(),
+        BranchLng: faker.address.longitude()
       },
       {
         BranchID: 1,
-        BranchName: Faker.Company.companyName(),
-        BranchAddress: Faker.Address.streetAddress(),
-        BranchPhone: Faker.PhoneNumber.phoneNumber(),
-        BranchLat: Faker.Address.latitude(),
-        BranchLng: Faker.Address.longitude()
+        Branchname: faker.company.companyName(),
+        Branchaddress: faker.address.streetAddress(),
+        BranchPhone: faker.phone.phoneNumber(),
+        BranchLat: faker.address.latitude(),
+        BranchLng: faker.address.longitude()
       }
     ],
   },
   {
-    BusinessId: Faker.random.number(),
-    Name: Faker.Company.companyName(),
-    CategoryName: "Sin categoria",
-    Email: Faker.Internet.email(),
-    Website: Faker.Internet.domainName(),
+    BusinessId: faker.random.number(),
+    name: faker.company.companyName(),
+    Categoryname: "Sin categoria",
+    Email: faker.internet.email(),
+    Website: faker.internet.domainName(),
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
-    Code: Faker.Helpers.randomNumber(),
+    Code: faker.random.number(),
     Description: "No hay descripción disponible",
     WalletBonus: 0,
     InvitedBonus: 0,
     InviteBonus: 0,
-    UserName: Faker.Internet.userName(),
-    UserEmail: Faker.Internet.email(),
+    userName: faker.internet.userName(),
+    UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: Faker.Image.imageUrl(),
+    Businessimage: faker.image.imageUrl(),
     WithWallet: true,
     Branches: [
       {
         BranchID: 0,
-        BranchName: Faker.Company.companyName(),
-        BranchAddress: Faker.Address.streetAddress(),
-        BranchPhone: Faker.PhoneNumber.phoneNumber(),
-        BranchLat: Faker.Address.latitude(),
-        BranchLng: Faker.Address.longitude()
+        Branchname: faker.company.companyName(),
+        Branchaddress: faker.address.streetAddress(),
+        BranchPhone: faker.phone.phoneNumber(),
+        BranchLat: faker.address.latitude(),
+        BranchLng: faker.address.longitude()
       },
       {
         BranchID: 1,
-        BranchName: Faker.Company.companyName(),
-        BranchAddress: Faker.Address.streetAddress(),
-        BranchPhone: Faker.PhoneNumber.phoneNumber(),
-        BranchLat: Faker.Address.latitude(),
-        BranchLng: Faker.Address.longitude()
+        Branchname: faker.company.companyName(),
+        Branchaddress: faker.address.streetAddress(),
+        BranchPhone: faker.phone.phoneNumber(),
+        BranchLat: faker.address.latitude(),
+        BranchLng: faker.address.longitude()
       }
     ],
   }

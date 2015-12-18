@@ -1,32 +1,32 @@
 import express from 'express';
-import Faker from 'Faker';
+import faker from 'faker';
 
 var datosComercio = {
   0: {
-    BusinessId: Faker.random.number(),
-    Name: Faker.Company.companyName(),
-    CategoryName: Faker.Company.bs(),
-    Email: Faker.Internet.email(),
+    BusinessId: faker.random.number(),
+    name: faker.company.companyName(),
+    Categoryname: faker.company.bs(),
+    Email: faker.internet.email(),
     Website: "http://www.facebook.com",
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
     Code: "Industria Inutil",
-    Description: Faker.Company.catchPhrase(),
+    Description: faker.company.catchPhrase(),
     WalletBonus: 0,
     InvitedBonus: 0,
-    UserName: Faker.Internet.userName(),
-    UserEmail: Faker.Internet.email(),
+    userName: faker.internet.userName(),
+    UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: Faker.Image.business(),
+    Businessimage: faker.image.business(),
     WithWallet: true,
     Branches: [
         {
           BranchID: 0,
-          BranchName: Faker.Company.companyName(),
-          BranchAddress: Faker.Address.streetAddress(),
-          BranchPhone: Faker.PhoneNumber.phoneNumber(),
-          BranchLat: Faker.Address.latitude(),
-          BranchLng: Faker.Address.longitude()
+          Branchname: faker.company.companyName(),
+          Branchaddress: faker.address.streetAddress(),
+          BranchPhone: faker.phone.phoneNumber(),
+          BranchLat: faker.address.latitude(),
+          BranchLng: faker.address.longitude()
         }
     ],
     WithWallet: true,
