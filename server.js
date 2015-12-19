@@ -12,6 +12,7 @@ import promocionesComercio from './fakeDatabase/promocionesComercio/index';
 import puntosMonederoUsuario from './fakeDatabase/puntosMonederoUsuario/index';
 import obtenerPromocionesDisponiblesParaUnUsuario from './fakeDatabase/obtenerPromocionesDisponiblesParaUsuario/index';
 import obtenerPromocionesDisponiblesParaUsuarioSegunSuUbicacion from './fakeDatabase/obtenerPromocionesDisponiblesParaUsuarioSegunSuUbicacion/index';
+import monederosDeUsuario from './fakeDatabase/monederosDeUsuarios/index';
 
 express()
   .set('json spaces', 2)
@@ -29,6 +30,7 @@ express()
   .use(puntosMonederoUsuario)
   .use(obtenerPromocionesDisponiblesParaUnUsuario)
   .use(obtenerPromocionesDisponiblesParaUsuarioSegunSuUbicacion)
+  .use(monederosDeUsuario)
   .listen(3000, (err) => {
     console.log('Escuchando en el puerto 3000 :)')
   })
