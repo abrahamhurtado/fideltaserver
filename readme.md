@@ -1,5 +1,7 @@
 # Server Fideltoso
 
+## NECESITAS TENER NODE
+
 Server con datos falsos y aleatorios modelados a partir de la documentación de la API fideltosa, con el propósito dar una interfaz homogénea para todas las peticiones de los proyectos fideltásticos.
 
 Por el momento, sólo están disponibles los servicios que utilizan el protocolo ```GET```, los que son ```POST``` no tenemos pensados  hacerlos, es demasiado desmadre, sentimos, pero si hay suficiente demanda, se puede intentar.
