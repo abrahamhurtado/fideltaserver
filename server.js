@@ -10,6 +10,7 @@ import obtenerMonederoDeUsuario from './fakeDatabase/obtenerMonederoDeUsuario/in
 import listadoFiltradoDeComercios from './fakeDatabase/ListadoFiltradoDeComercios/index';
 import promocionesComercio from './fakeDatabase/promocionesComercio/index';
 import puntosMonederoUsuario from './fakeDatabase/puntosMonederoUsuario/index';
+import obtenerPromocionesDisponiblesParaUnUsuario from './fakeDatabase/obtenerPromocionesDisponiblesParaUsuario/index';
 
 express()
   .set('json spaces', 2)
@@ -25,6 +26,7 @@ express()
   .use(listadoFiltradoDeComercios)
   .use(promocionesComercio)
   .use(puntosMonederoUsuario)
+  .use(obtenerPromocionesDisponiblesParaUnUsuario)
   .listen(3000, (err) => {
     console.log('Escuchando en el puerto 3000 :)')
   })
