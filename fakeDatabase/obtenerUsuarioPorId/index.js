@@ -16,9 +16,8 @@ var miBaseDeUsuarios = {
 
 const router = express.Router();
 
-router.get('/api/user/id/:json', function (req, res) {
-  var objetoRecibido = JSON.parse(req.params.json);
-  res.json(miBaseDeUsuarios[objetoRecibido.id]);
+router.get('/api/user/id/:id', function (req, res) {
+  res.json(miBaseDeUsuarios[0]);
 });
 
 export default router;
