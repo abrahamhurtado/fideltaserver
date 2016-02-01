@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker/locale/es_MX';
+import faker from 'faker';
 
 var miBaseDeUsuarios = {
   0: {

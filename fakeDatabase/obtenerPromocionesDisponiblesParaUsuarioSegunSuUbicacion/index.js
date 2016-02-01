@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker/locale/es_MX';
+import faker from 'faker';
 
 let Promos = [
   {
@@ -7,10 +7,10 @@ let Promos = [
     Title: faker.lorem.sentence(),
     Description: faker.lorem.sentences(),
     Restriction: faker.lorem.sentences(),
-    PromotionImage: faker.image.business(),
-    PromotionImage: faker.image.business(),
+    PromotionImage: faker.image.imageUrl(),
+    PromotionImage: faker.image.imageUrl(),
     BusinessCode: faker.random.uuid(),
-    BusinessImage: faker.image.business(),
+    BusinessImage: faker.image.imageUrl(),
     PromotionAmount: "lolwut",
     Days: faker.date.future().toString()
   }, {
@@ -18,10 +18,10 @@ let Promos = [
     Title: faker.lorem.sentence(),
     Description: faker.lorem.sentences(),
     Restriction: faker.lorem.sentences(),
-    PromotionImage: faker.image.business(),
-    PromotionImage: faker.image.business(),
+    PromotionImage: faker.image.imageUrl(),
+    PromotionImage: faker.image.imageUrl(),
     BusinessCode: faker.random.uuid(),
-    BusinessImage: faker.image.business(),
+    BusinessImage: faker.image.imageUrl(),
     PromotionAmount: "lolwut",
     Days: faker.date.future().toString()
   }, {
@@ -29,10 +29,10 @@ let Promos = [
       Title: faker.lorem.sentence(),
       Description: faker.lorem.sentences(),
       Restriction: faker.lorem.sentences(),
-      PromotionImage: faker.image.business(),
-      PromotionImage: faker.image.business(),
+      PromotionImage: faker.image.imageUrl(),
+      PromotionImage: faker.image.imageUrl(),
       BusinessCode: faker.random.uuid(),
-      BusinessImage: faker.image.business(),
+      BusinessImage: faker.image.imageUrl(),
       PromotionAmount: "lolwut",
       Days: faker.date.future().toString()
   }

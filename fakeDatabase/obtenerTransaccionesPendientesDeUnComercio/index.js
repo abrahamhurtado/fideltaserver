@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker/locale/es_Mx';
+import faker from 'faker';
 
 var Transactions = [
   {

@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker/locale/es_MX';
+import faker from 'faker';
 
 var listadoDeComercios = [
   {
@@ -10,7 +10,7 @@ var listadoDeComercios = [
     Website: "http://facebook.com",
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
-    Code: "Industria Inutil",
+    Code: faker.random.uuid(),
     Description: faker.company.catchPhrase(),
     WalletBonus: 0,
     InvitedBonus: 0,
@@ -47,7 +47,7 @@ var listadoDeComercios = [
     Website: faker.internet.domainName(),
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
-    Code: faker.random.number(),
+    Code: faker.random.uuid(),
     Description: "No hay descripción disponible",
     WalletBonus: 0,
     InvitedBonus: 0,

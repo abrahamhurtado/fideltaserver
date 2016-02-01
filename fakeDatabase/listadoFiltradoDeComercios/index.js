@@ -1,5 +1,5 @@
 import expres from 'express';
-import faker from 'faker/locale/es_MX';
+import faker from 'faker';
 
 var Business = [
   {
@@ -18,7 +18,7 @@ var Business = [
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.business(),
+    BusinessImage: faker.image.imageUrl(),
     WithWallet: faker.random.boolean(),
     Branches: [
         {
@@ -46,7 +46,7 @@ var Business = [
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.business(),
+    BusinessImage: faker.image.imageUrl(),
     WithWallet: faker.random.boolean(),
     Branches: [
         {

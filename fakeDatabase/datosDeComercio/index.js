@@ -1,5 +1,5 @@
 import express from 'express';
-import faker from 'faker/locale/es_MX';
+import faker from 'faker';
 
 var datosComercio = {
   0: {
@@ -10,14 +10,14 @@ var datosComercio = {
     Website: "http://www.facebook.com",
     FacebookURL: "Ninguno",
     TwitterURL: "Ninguno",
-    Code: "Industria Inutil",
+    Code: faker.random.uuid(),
     Description: faker.company.catchPhrase(),
     WalletBonus: 0,
     InvitedBonus: 0,
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.business(),
+    BusinessImage: faker.image.imageUrl(),
     WithWallet: true,
     Branches: [
         {
@@ -38,7 +38,7 @@ var datosComercio = {
 const router = express.Router();
 
 router.get('/api/business/profile/business/:businessCode/user/:userCode', function (req, res) {
-  res.json(datosComercio[0])
+  res.status(200).json(datosComercio[0])
 });
 
 export default router;
