@@ -33,6 +33,6 @@ express()
   .use(obtenerPromocionesDisponiblesParaUnUsuario)
   .use(obtenerPromocionesDisponiblesParaUsuarioSegunSuUbicacion)
   .use(monederosDeUsuario)
-  .listen(3000, (err) => {
+  .listen(process.env.PORT || 3000, (err) => {
     console.log('Escuchando en el puerto 3000 :)')
   })
