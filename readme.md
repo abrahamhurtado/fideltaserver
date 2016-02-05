@@ -1,6 +1,6 @@
 # Server Fideltoso
 
-## NECESITAS TENER NODE
+## NECESITAS TENER NODE 5.x.x
 
 Server con datos falsos y aleatorios modelados a partir de la documentación de la API fideltosa, con el propósito dar una interfaz homogénea para todas las peticiones de los proyectos fideltásticos.
 
