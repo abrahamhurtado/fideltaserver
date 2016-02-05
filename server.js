@@ -7,7 +7,7 @@ import listadoDeTodosLosComercios from './fakeDatabase/listadoDeTodosLosComercio
 import obtenerInvitacionesDeUsuario from './fakeDatabase/obtenerInvitacionesDeUsuario/index';
 import obtenerTransaccionesPendientesDeUnComercio from './fakeDatabase/obtenerTransaccionesPendientesDeUnComercio/index';
 import obtenerMonederoDeUsuario from './fakeDatabase/obtenerMonederoDeUsuario/index';
-import listadoFiltradoDeComercios from './fakeDatabase/ListadoFiltradoDeComercios/index';
+import listadoFiltradoDeComercios from './fakeDatabase/listadoFiltradoDeComercios/index';
 import promocionesComercio from './fakeDatabase/promocionesComercio/index';
 import puntosMonederoUsuario from './fakeDatabase/puntosMonederoUsuario/index';
 import obtenerPromocionesDisponiblesParaUnUsuario from './fakeDatabase/obtenerPromocionesDisponiblesParaUsuario/index';
