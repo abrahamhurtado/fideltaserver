@@ -1,5 +1,6 @@
 import expres from 'express';
 import faker from 'faker';
+import getImage from '../../getImage'
 
 var Business = [
   {
@@ -18,13 +19,13 @@ var Business = [
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     WithWallet: faker.random.boolean(),
     Branches: [
         {
           BranchID: 0,
-          Branchname: faker.company.companyName(),
-          Branchaddress: faker.address.streetAddress(),
+          BranchName: faker.company.companyName(),
+          BranchAddress: faker.address.streetAddress(),
           BranchPhone: faker.phone.phoneNumber(),
           BranchLat: faker.address.latitude(),
           BranchLng: faker.address.longitude()
@@ -46,13 +47,13 @@ var Business = [
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     WithWallet: faker.random.boolean(),
     Branches: [
         {
           BranchID: 0,
-          Branchname: faker.company.companyName(),
-          Branchaddress: faker.address.streetAddress(),
+          BranchName: faker.company.companyName(),
+          BranchAddress: faker.address.streetAddress(),
           BranchPhone: faker.phone.phoneNumber(),
           BranchLat: faker.address.latitude(),
           BranchLng: faker.address.longitude()

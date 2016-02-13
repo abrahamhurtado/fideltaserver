@@ -11,7 +11,8 @@
   "dependencies": {
     "babel-register": "^6.3.13",
     "express": "^4.13.3",
-    "faker": "^3.0.1"
+    "faker": "^3.0.1",
+    "node-base64-image": "^0.1.1"
   },
   "devDependencies": {
     "babel-plugin-add-module-exports": "^0.1.1",

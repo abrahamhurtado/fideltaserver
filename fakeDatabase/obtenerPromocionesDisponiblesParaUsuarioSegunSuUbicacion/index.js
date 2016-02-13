@@ -1,5 +1,6 @@
 import express from 'express';
 import faker from 'faker';
+import getImage from '../../getImage'
 
 let Promos = [
   {
@@ -7,10 +8,9 @@ let Promos = [
     Title: faker.lorem.sentence(),
     Description: faker.lorem.sentences(),
     Restriction: faker.lorem.sentences(),
-    PromotionImage: faker.image.imageUrl(),
-    PromotionImage: faker.image.imageUrl(),
+    PromotionImage: getImage(),
     BusinessCode: faker.random.uuid(),
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     PromotionAmount: "lolwut",
     Days: faker.date.future().toString()
   }, {
@@ -18,10 +18,9 @@ let Promos = [
     Title: faker.lorem.sentence(),
     Description: faker.lorem.sentences(),
     Restriction: faker.lorem.sentences(),
-    PromotionImage: faker.image.imageUrl(),
-    PromotionImage: faker.image.imageUrl(),
+    PromotionImage: getImage(),
     BusinessCode: faker.random.uuid(),
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     PromotionAmount: "lolwut",
     Days: faker.date.future().toString()
   }, {
@@ -29,10 +28,9 @@ let Promos = [
       Title: faker.lorem.sentence(),
       Description: faker.lorem.sentences(),
       Restriction: faker.lorem.sentences(),
-      PromotionImage: faker.image.imageUrl(),
-      PromotionImage: faker.image.imageUrl(),
+      PromotionImage: getImage(),
       BusinessCode: faker.random.uuid(),
-      BusinessImage: faker.image.imageUrl(),
+      BusinessImage: getImage(),
       PromotionAmount: "lolwut",
       Days: faker.date.future().toString()
   }

@@ -1,11 +1,12 @@
 import express from 'express';
 import faker from 'faker';
+import getImage from '../../getImage'
 
 var datosComercio = {
   0: {
     BusinessId: faker.random.number(),
-    name: faker.company.companyName(),
-    Categoryname: faker.company.bs(),
+    Name: faker.company.companyName(),
+    CategoryName: faker.company.bs(),
     Email: faker.internet.email(),
     Website: "http://www.facebook.com",
     FacebookURL: "Ninguno",
@@ -17,13 +18,13 @@ var datosComercio = {
     UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     WithWallet: true,
     Branches: [
         {
           BranchID: 0,
-          Branchname: faker.company.companyName(),
-          Branchaddress: faker.address.streetAddress(),
+          BranchName: faker.company.companyName(),
+          BranchAddress: faker.address.streetAddress(),
           BranchPhone: faker.phone.phoneNumber(),
           BranchLat: faker.address.latitude(),
           BranchLng: faker.address.longitude()

@@ -1,11 +1,12 @@
 import express from 'express';
 import faker from 'faker';
+import getImage from '../../getImage'
 
 var listadoDeComercios = [
   {
     BusinessId: faker.random.number(),
-    name: faker.company.companyName(),
-    Categoryname: faker.company.bs(),
+    Name: faker.company.companyName(),
+    CategoryName: faker.company.bs(),
     Email: faker.internet.email(),
     Website: "http://facebook.com",
     FacebookURL: "Ninguno",
@@ -15,24 +16,24 @@ var listadoDeComercios = [
     WalletBonus: 0,
     InvitedBonus: 0,
     InviteBonus: 0,
-    userName: faker.internet.userName(),
+    UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    Businessimage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     WithWallet: true,
     Branches: [
       {
         BranchID: 0,
-        Branchname: faker.company.companyName(),
-        Branchaddress: faker.address.streetAddress(),
+        BranchName: faker.company.companyName(),
+        BranchAddress: faker.address.streetAddress(),
         BranchPhone: faker.phone.phoneNumber(),
         BranchLat: faker.address.latitude(),
         BranchLng: faker.address.longitude()
       },
       {
         BranchID: 1,
-        Branchname: faker.company.companyName(),
-        Branchaddress: faker.address.streetAddress(),
+        BranchName: faker.company.companyName(),
+        BranchAddress: faker.address.streetAddress(),
         BranchPhone: faker.phone.phoneNumber(),
         BranchLat: faker.address.latitude(),
         BranchLng: faker.address.longitude()
@@ -41,8 +42,8 @@ var listadoDeComercios = [
   },
   {
     BusinessId: faker.random.number(),
-    name: faker.company.companyName(),
-    Categoryname: "Sin categoria",
+    Name: faker.company.companyName(),
+    CategoryName: "Sin categoria",
     Email: faker.internet.email(),
     Website: faker.internet.domainName(),
     FacebookURL: "Ninguno",
@@ -52,24 +53,24 @@ var listadoDeComercios = [
     WalletBonus: 0,
     InvitedBonus: 0,
     InviteBonus: 0,
-    userName: faker.internet.userName(),
+    UserName: faker.internet.userName(),
     UserEmail: faker.internet.email(),
     Wallets: 0,
-    Businessimage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     WithWallet: true,
     Branches: [
       {
         BranchID: 0,
-        Branchname: faker.company.companyName(),
-        Branchaddress: faker.address.streetAddress(),
+        BranchName: faker.company.companyName(),
+        BranchAddress: faker.address.streetAddress(),
         BranchPhone: faker.phone.phoneNumber(),
         BranchLat: faker.address.latitude(),
         BranchLng: faker.address.longitude()
       },
       {
         BranchID: 1,
-        Branchname: faker.company.companyName(),
-        Branchaddress: faker.address.streetAddress(),
+        BranchName: faker.company.companyName(),
+        BranchAddress: faker.address.streetAddress(),
         BranchPhone: faker.phone.phoneNumber(),
         BranchLat: faker.address.latitude(),
         BranchLng: faker.address.longitude()

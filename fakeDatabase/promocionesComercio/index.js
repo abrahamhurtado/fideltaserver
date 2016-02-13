@@ -1,5 +1,6 @@
 import express from "express";
-import faker from "faker/locale/es_MX"
+import faker from "faker"
+import getImage from '../../getImage'
 
 var promocionesUsuario =  {
 
@@ -8,12 +9,12 @@ var promocionesUsuario =  {
     Title: "Nada que ver aquí amigos",
     Description: faker.company.catchPhraseDescriptor(),
     Restriction: "No hay ninguna información al respecto",
-    PromotionImage: faker.image.imageUrl(),
+    PromotionImage: getImage(),
     PromotionImageApp: faker.image.avatar(),
     BusinessName: faker.company.companyName(),
     BusinessCode: faker.random.uuid(),
     BusinessId: faker.random.number(),
-    BusinessImage: faker.image.imageUrl(),
+    BusinessImage: getImage(),
     PromotionAmount: 0,
     Days: 0
 
@@ -25,12 +26,12 @@ var promocionesUsuario =  {
   Title: "Nada que ver aquí amigos, otra vez",
   Description: faker.company.catchPhraseDescriptor(),
   Restriction: "No hay ninguna información al respecto",
-  PromotionImage: faker.image.imageUrl(),
+  PromotionImage: getImage(),
   PromotionImageApp: faker.image.avatar(),
   BusinessName: faker.company.companyName(),
   BusinessCode: faker.random.uuid(),
   BusinessId: faker.random.number(),
-  BusinessImage: faker.image.imageUrl(),
+  BusinessImage: getImage(),
   PromotionAmount: 0,
   Days: 0
 

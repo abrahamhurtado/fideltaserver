@@ -5,10 +5,10 @@ var miBaseDeUsuarios = {
   0: {
     Id: 0,
     Email: faker.internet.email(),
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    FirstName: faker.name.firstName(),
+    LastName: faker.name.lastName(),
     IsMan: true,
-    imageCode: faker.image.avatar(),
+    ImageCode: faker.image.avatar(),
     Birthdate: faker.date.past(),
     Wallets: 0
   }

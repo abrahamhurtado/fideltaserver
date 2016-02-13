@@ -1,5 +1,6 @@
 import express from 'express';
 import Faker from "Faker";
+import path from 'path';
 
 import obtenerUsuarioPorId from './fakeDatabase/obtenerUsuarioPorId/index';
 import datosDeComercio from './fakeDatabase/datosDeComercio/index';
@@ -15,6 +16,7 @@ import obtenerPromocionesDisponiblesParaUsuarioSegunSuUbicacion from './fakeData
 import monederosDeUsuario from './fakeDatabase/monederosDeUsuarios/index';
 
 express()
+  .use('/public', express.static(path.resolve('public')))
   .set('json spaces', 2)
   .get('/', (req, res) => {
     res.status(200).send('Hola!')
