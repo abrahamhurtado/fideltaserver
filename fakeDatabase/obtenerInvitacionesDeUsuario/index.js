@@ -9,7 +9,7 @@ var InvitationsSend = [
     SenderEmail: faker.internet.email(),
     Code: faker.random.uuid(),
     SenderName: `${faker.name.firstName()} ${faker.name.lastName()}`,
-    ActivationDate: faker.date.past()
+    ActivationDate: faker.date.past().toString()
   }, {
     BusinessName: faker.company.companyName(),
     Email: faker.internet.email(),
@@ -17,7 +17,7 @@ var InvitationsSend = [
     SenderEmail: faker.internet.email(),
     Code: faker.random.uuid(),
     SenderName: `${faker.name.firstName()} ${faker.name.lastName()}`,
-    ActivationDate: faker.date.past()
+    ActivationDate: faker.date.past().toString()
   }
 ];
 
@@ -29,7 +29,7 @@ var InvitationsReceived = [
     SenderEmail: faker.internet.email(),
     Code: faker.random.uuid(),
     SenderName: `${faker.name.firstName()} ${faker.name.lastName()}`,
-    ActivationDate: faker.date.past()
+    ActivationDate: faker.date.past().toString()
   }, {
     BusinessName: faker.company.companyName(),
     Email: faker.internet.email(),
@@ -37,7 +37,7 @@ var InvitationsReceived = [
     SenderEmail: faker.internet.email(),
     Code: faker.random.uuid(),
     SenderName: `${faker.name.firstName()} ${faker.name.lastName()}`,
-    ActivationDate: faker.date.past()
+    ActivationDate: faker.date.past().toString()
   }
 ];
 
