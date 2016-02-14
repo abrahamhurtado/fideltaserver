@@ -9,7 +9,7 @@ var miBaseDeUsuarios = {
     LastName: faker.name.lastName(),
     IsMan: true,
     ImageCode: faker.image.avatar(),
-    Birthdate: faker.date.past(),
+    BirthDate: "1990-12-15",
     Wallets: 0
   }
 }
